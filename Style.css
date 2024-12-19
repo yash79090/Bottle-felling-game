@@ -1,0 +1,111 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 20px;
+}
+
+#gameTitle {
+    font-size: 24px;
+    color: #333;
+}
+
+#startButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#scoreboard {
+    margin-top: 20px;
+}
+
+#scoreboard span {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* Game area */
+.game-area {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.bottle {
+    width: 60px;
+    height: 120px;
+    border: 2px solid #333;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.bottle[data-bottle="1"] {
+    background-color: #f4f4f4;
+}
+
+.bottle[data-bottle="2"] {
+    background-color: #f4f4f4;
+}
+
+.bottle[data-bottle="3"] {
+    background-color: #f4f4f4;
+}
+
+/* Color palette */
+.color-palette {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+/* Ad space */
+.adsense {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
